@@ -14,6 +14,11 @@ describe('Document', function () {
     })
 
     it('should return values for known fields', function () {
+      assert.bool(user.get('spam'))
+      assert.equal(user.get('spam'), false)
+    })
+
+    it('should traverse dotted notation for fields', function () {
       assert.string(user.get('name.first'))
       assert.equal(user.get('name.first'), 'John')
     })
@@ -27,7 +32,7 @@ describe('Document', function () {
       assert.equal(user.data.email, 'test@example.com')
     })
 
-    it('should traverse dotted notation field names', function () {
+    it('should traverse dotted notation for field', function () {
       user.set('name.last', 'Smith')
 
       assert.string(user.data.name.last)
