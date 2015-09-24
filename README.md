@@ -27,4 +27,4 @@ Imponderous is an extremely simple, straight-forward, schema-based modeling wrap
 
 ## Getting Started
 
-- [Quick start guide](docs/index.md)
+- [Quick start guide](https://github.com/benhutchins/imponderous/blob/master/docs/index.md)
