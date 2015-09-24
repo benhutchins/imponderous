@@ -1,7 +1,16 @@
-var gulp = require('gulp')
-var mocha = require('gulp-mocha')
+'use strict'
 
-gulp.task('test', function () {
+let gulp = require('gulp')
+let mocha = require('gulp-mocha')
+var del = require('del')
+
+gulp.task('clean:test', function () {
+  return del([
+    'test/db/**'
+  ])
+})
+
+gulp.task('test', ['clean:test'], function () {
   return gulp.src('test/*.js', { read: false })
     .pipe(
       mocha({
