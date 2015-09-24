@@ -3,7 +3,7 @@
 let gulp = require('gulp')
 let mocha = require('gulp-mocha')
 let standard = require('gulp-standard')
-var del = require('del')
+let del = require('del')
 
 gulp.task('lint', function () {
   return gulp.src(['index.js', 'lib/**/*.js', 'test/**/*.js'])
