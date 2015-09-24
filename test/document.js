@@ -8,6 +8,20 @@ describe('Document', function () {
 
   imponderous.connect(__dirname + '/db')
 
+  describe('.key', () => {
+    it('should return a valid UUID', () => {
+      assert.string(user.key)
+      assert.uuid(user.key)
+    })
+
+    it('should allow key reassignment', () => {
+      var oldKey = user.key
+      user.key = 'tuser'
+      assert.equal(user.key, 'tuser')
+      assert.equal(user._oldKey, oldKey)
+    })
+  })
+
   describe('#get', function () {
     it('should provide undefined to unknown fields', function () {
       assert.equal(user.get('undefined'), undefined)
