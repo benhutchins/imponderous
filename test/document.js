@@ -15,7 +15,7 @@ describe('Document', function () {
     })
 
     it('should allow key reassignment', () => {
-      var oldKey = user.key
+      let oldKey = user.key
       user.key = 'tuser'
       assert.equal(user.key, 'tuser')
       assert.equal(user._oldKey, oldKey)
