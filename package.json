@@ -17,6 +17,7 @@
     "node-uuid": "^1.4.3"
   },
   "optionalDependencies": {
+    "js-yaml": "^3.4.2",
     "season": "^5.3.0"
   },
   "devDependencies": {
