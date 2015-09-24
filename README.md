@@ -1,4 +1,4 @@
-# Imponderous
+# Imponderous [![Build Status](https://travis-ci.org/benhutchins/imponderous.svg)](https://travis-ci.org/benhutchins/imponderous)
 
 Let's face it, sometimes you want a simple database that's fast, quick, speedy, swift and just downright blazing. That's why I wrote Imponderous.
 

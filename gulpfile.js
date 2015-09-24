@@ -18,3 +18,5 @@ gulp.task('test', ['clean:test'], function () {
       })
     )
 })
+
+gulp.task('default', ['test'])
