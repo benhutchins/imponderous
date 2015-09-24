@@ -1,0 +1,15 @@
+{
+  "name": "imponderous",
+  "version": "0.0.1",
+  "description": "Superb file-based database",
+  "main": "index.js",
+  "author": "Benjamin Hutchins <ben@hutchins.co>",
+  "license": "MIT",
+  "dependencies": {
+    "assert-plus": "^0.1.5",
+    "lodash": "^3.10.1",
+    "mkdirp": "^0.5.1",
+    "node-uuid": "^1.4.3",
+    "rimraf": "^2.4.3"
+  }
+}
