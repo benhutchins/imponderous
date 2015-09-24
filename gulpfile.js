@@ -12,11 +12,7 @@ gulp.task('clean:test', function () {
 
 gulp.task('test', ['clean:test'], function () {
   return gulp.src('test/*.js', { read: false })
-    .pipe(
-      mocha({
-        reporter: 'nyan'
-      })
-    )
+    .pipe(mocha())
 })
 
 gulp.task('default', ['test'])
