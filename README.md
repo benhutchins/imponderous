@@ -23,7 +23,7 @@ kitty.save().catch(function (err) {
 
 ```
 
-Imponderous is an extremely simple, straight-forward, schema-based modeling wrapper on top of a simple file-based database. It includes built-in type casting, validation, query building and more out of the box. It offers amazing utilities on top of simple text files giving you a powerful database alternative.
+Imponderous is an extremely simple, straight-forward, schema-based modeling wrapper on top of a document-oriented database that relies on actual files on a disk. It includes built-in type casting, validation, query building and more out of the box. It offers amazing utilities on top of simple text files giving you a powerful database alternative.
 
 ## Getting Started
 

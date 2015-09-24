@@ -1,7 +1,7 @@
 {
   "name": "imponderous",
   "version": "0.0.5",
-  "description": "Superb file-based database",
+  "description": "A document-oriented database written using a bunch of text files.",
   "main": "index.js",
   "author": "Benjamin Hutchins <ben@hutchins.co>",
   "license": "MIT",
