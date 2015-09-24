@@ -46,5 +46,12 @@ describe('Document', function () {
 
       assert.equal(user.get('email'), undefined)
     })
+
+    it('should delete multiple properties', function () {
+      user.rm('name.first', 'spam')
+
+      assert.equal(user.get('name.first'), undefined)
+      assert.equal(user.get('spam'), undefined)
+    })
   })
 })
