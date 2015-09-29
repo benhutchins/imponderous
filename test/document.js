@@ -28,8 +28,13 @@ describe('Document', function () {
     })
 
     it('should return values for known fields', function () {
+      // using .get() method
       assert.bool(user.get('spam'))
       assert.equal(user.get('spam'), false)
+
+      // using .field method
+      assert.bool(user.spam)
+      assert.equal(user.spam, false)
     })
 
     it('should traverse dotted notation for fields', function () {
