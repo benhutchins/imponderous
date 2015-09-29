@@ -15,6 +15,9 @@ class User extends imponderous.Model {
       },
       dob: {
         type: Date
+      },
+      spam: {
+        type: String
       }
     }
   }
